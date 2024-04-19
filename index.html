@@ -310,8 +310,8 @@
   <section id="certificates">
     <p class="section__text__p1">Browse My Certificates/Badges</p>
     <h1 class="title">Certificates and Badges</h1>
-    <div class="certificate-details-container certificate-slider ">
-      <div class="about-containers">
+    <div class="certificate-details-container ">
+      <div class="about-containers slick-carousel">
         <!-- Certificate 1 -->
         <div class="details-container color-container">
           <div class="article-container">
@@ -497,18 +497,10 @@
             link.media = "screen,print";
             document.getElementsByTagName("head")[0].appendChild(link);
         </script>
-    <script>
-      $(document).ready(function(){
-        $('.certificate-slider').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000, // Change slide every 2 seconds
-          dots: true,
-          infinite: true,
-          arrows: false
-        });
-      });
-    </script>
+    <!-- jQuery CDN -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- slick Carousel CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
   </body>
 </html>
