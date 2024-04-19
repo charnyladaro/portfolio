@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -308,7 +310,7 @@
   <section id="certificates">
     <p class="section__text__p1">Browse My Certificates/Badges</p>
     <h1 class="title">Certificates and Badges</h1>
-    <div class="certificate-details-container">
+    <div class="certificate-details-container certificate-slider ">
       <div class="about-containers">
         <!-- Certificate 1 -->
         <div class="details-container color-container">
@@ -378,11 +380,6 @@
               alt="Certificate"
               class="project-img"
             />
-<!--                     <a href="https://www.testdome.com/certificates/f009a6de03664a68879fd2ad3ad31bf0" class="testdome-certificate-stamp gold">
-            <span class="testdome-certificate-name">Charnyl Adaro</span>
-            <span class="testdome-certificate-test-name">Cybersecurity</span>
-            <span class="testdome-certificate-card-logo">TestDome<br>Certificate</span>
-        </a> -->
                   </div>
                   <h2 class="certificate-sub-title project-title"></h2>
                   <div class="btn-container">            
@@ -500,5 +497,18 @@
             link.media = "screen,print";
             document.getElementsByTagName("head")[0].appendChild(link);
         </script>
+    <script>
+      $(document).ready(function(){
+        $('.certificate-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000, // Change slide every 2 seconds
+          dots: true,
+          infinite: true,
+          arrows: false
+        });
+      });
+    </script>
   </body>
 </html>
