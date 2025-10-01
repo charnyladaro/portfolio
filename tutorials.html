@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Charnyl Adaro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./assets/cha-logo.png" alt="Charnyl Adaro">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="tutorials.html" class="nav-link active">Tutorials</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tutorials Hero -->
+    <section class="tutorials-hero">
+        <div class="container">
+            <div class="tutorials-hero-content">
+                <span class="section-label">Learn With Me</span>
+                <h1 class="hero-title">Security <span class="gradient-text">Tutorials</span></h1>
+                <p class="hero-description">
+                    Explore my collection of cybersecurity tutorials, penetration testing guides, 
+                    and ethical hacking demonstrations. Learn industry best practices and security techniques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="tutorials-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Tutorials
+                </button>
+                <button class="filter-btn" data-filter="pentesting">
+                    <i class="fas fa-bug"></i> Penetration Testing
+                </button>
+                <button class="filter-btn" data-filter="web-security">
+                    <i class="fas fa-shield-alt"></i> Web Security
+                </button>
+                <button class="filter-btn" data-filter="tools">
+                    <i class="fas fa-tools"></i> Security Tools
+                </button>
+                <button class="filter-btn" data-filter="programming">
+                    <i class="fas fa-code"></i> Programming
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Grid -->
+    <section class="tutorials-section">
+        <div class="container">
+            <div class="tutorials-grid" id="tutorialsGrid">
+                
+                <!-- Tutorial Card 1 -->
+                <div class="tutorial-card" data-category="pentesting" data-aos="fade-up">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/667eea/ffffff?text=Burp+Suite+Tutorial" alt="Burp Suite Tutorial">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 15:30
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category programming">Programming</div>
+                        <h3>Python for Security Professionals</h3>
+                        <p>Build custom security tools and automation scripts using Python for penetration testing.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 15, 2024</span>
+                            <span><i class="fas fa-eye"></i> 2.9K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 7 -->
+                <div class="tutorial-card" data-category="tools" data-aos="fade-up">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=OWASP+ZAP" alt="OWASP ZAP">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 19:30
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category tools">Security Tools</div>
+                        <h3>Web App Testing with OWASP ZAP</h3>
+                        <p>Complete guide to automated and manual web application security testing using OWASP ZAP.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 8, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.5K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 8 -->
+                <div class="tutorial-card" data-category="pentesting" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/ec4899/ffffff?text=Kali+Linux" alt="Kali Linux">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 28:50
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category pentesting">Penetration Testing</div>
+                        <h3>Kali Linux Setup and Configuration</h3>
+                        <p>Everything you need to know to set up and configure Kali Linux for penetration testing.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 1, 2024</span>
+                            <span><i class="fas fa-eye"></i> 5.3K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 9 -->
+                <div class="tutorial-card" data-category="programming" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/4facfe/ffffff?text=API+Security" alt="API Security">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 24:20
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category programming">Programming</div>
+                        <h3>Securing REST APIs: Best Practices</h3>
+                        <p>Learn how to build and secure REST APIs with proper authentication, authorization, and validation.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Oct 25, 2024</span>
+                            <span><i class="fas fa-eye"></i> 2.1K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-primary load-more-btn">
+                    <i class="fas fa-plus-circle"></i> Load More Tutorials
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section (for admin - can be hidden for public view) -->
+    <section class="upload-section" id="uploadSection" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Admin Only</span>
+                <h2 class="section-title">Upload New <span class="gradient-text">Tutorial</span></h2>
+            </div>
+
+            <div class="upload-form-container">
+                <form id="tutorialUploadForm" class="upload-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="tutorialTitle">
+                                <i class="fas fa-heading"></i> Tutorial Title
+                            </label>
+                            <input type="text" id="tutorialTitle" name="title" placeholder="Enter tutorial title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tutorialCategory">
+                                <i class="fas fa-tag"></i> Category
+                            </label>
+                            <select id="tutorialCategory" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="pentesting">Penetration Testing</option>
+                                <option value="web-security">Web Security</option>
+                                <option value="tools">Security Tools</option>
+                                <option value="programming">Programming</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="tutorialDescription">
+                                <i class="fas fa-align-left"></i> Description
+                            </label>
+                            <textarea id="tutorialDescription" name="description" rows="4" placeholder="Brief description of the tutorial" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="videoFile">
+                                <i class="fas fa-video"></i> Video File
+                            </label>
+                            <div class="file-upload">
+                                <input type="file" id="videoFile" name="video" accept="video/*" required>
+                                <label for="videoFile" class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Choose video file or drag here</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="thumbnailFile">
+                                <i class="fas fa-image"></i> Thumbnail Image
+                            </label>
+                            <div class="file-upload">
+                                <input type="file" id="thumbnailFile" name="thumbnail" accept="image/*" required>
+                                <label for="thumbnailFile" class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Choose thumbnail or drag here</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tutorialDuration">
+                                <i class="fas fa-clock"></i> Duration
+                            </label>
+                            <input type="text" id="tutorialDuration" name="duration" placeholder="e.g., 15:30" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tutorialTags">
+                                <i class="fas fa-tags"></i> Tags (comma separated)
+                            </label>
+                            <input type="text" id="tutorialTags" name="tags" placeholder="e.g., burpsuite, web, security">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-upload"></i> Upload Tutorial
+                        </button>
+                        <button type="reset" class="btn btn-secondary">
+                            <i class="fas fa-redo"></i> Reset Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to get notified about new tutorials and security insights</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/charnyladaro" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/charnyladaro" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:charnyladaro@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://youtube.com/@charnyladaro" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy; 2024 Charnyl Adaro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tutorials.js"></script>
+</body>
+</html>>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category pentesting">Penetration Testing</div>
+                        <h3>Complete Burp Suite Guide for Beginners</h3>
+                        <p>Learn how to use Burp Suite for web application security testing, from basic setup to advanced techniques.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 15, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.2K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 2 -->
+                <div class="tutorial-card" data-category="web-security" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=SQL+Injection" alt="SQL Injection">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 20:45
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category web-security">Web Security</div>
+                        <h3>SQL Injection: Detection and Prevention</h3>
+                        <p>Comprehensive guide on identifying SQL injection vulnerabilities and implementing secure coding practices.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 10, 2024</span>
+                            <span><i class="fas fa-eye"></i> 2.5K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 3 -->
+                <div class="tutorial-card" data-category="tools" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/ec4899/ffffff?text=NMAP+Scanning" alt="NMAP Tutorial">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 18:20
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category tools">Security Tools</div>
+                        <h3>Advanced NMAP Network Scanning</h3>
+                        <p>Master NMAP commands and techniques for network reconnaissance and vulnerability assessment.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 5, 2024</span>
+                            <span><i class="fas fa-eye"></i> 3.1K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 4 -->
+                <div class="tutorial-card" data-category="pentesting" data-aos="fade-up">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/4facfe/ffffff?text=Metasploit+Framework" alt="Metasploit">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 25:10
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category pentesting">Penetration Testing</div>
+                        <h3>Metasploit Framework Essentials</h3>
+                        <p>Learn penetration testing with Metasploit, from basic exploitation to post-exploitation techniques.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 28, 2024</span>
+                            <span><i class="fas fa-eye"></i> 4.2K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 5 -->
+                <div class="tutorial-card" data-category="web-security" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/f093fb/ffffff?text=XSS+Attacks" alt="XSS Tutorial">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 16:40
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-category web-security">Web Security</div>
+                        <h3>Cross-Site Scripting (XSS) Explained</h3>
+                        <p>Understand XSS vulnerabilities, exploitation techniques, and how to protect your web applications.</p>
+                        <div class="tutorial-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 20, 2024</span>
+                            <span><i class="fas fa-eye"></i> 1.8K views</span>
+                        </div>
+                        <a href="#" class="tutorial-link">Watch Tutorial <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorial Card 6 -->
+                <div class="tutorial-card" data-category="programming" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tutorial-thumbnail">
+                        <img src="https://via.placeholder.com/600x400/667eea/ffffff?text=Python+for+Security" alt="Python Security">
+                        <div class="tutorial-duration">
+                            <i class="fas fa-clock"></i> 22:15
+                        </div>
+                        <div class="tutorial-play">
+                            <i class="fas fa-play"></i>
+                        </div
