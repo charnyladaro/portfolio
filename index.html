@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charnyl Adaro - Digital Security Lead</title>
+    <meta
+      name="description"
+      content="Charnyl Adaro — Digital Security Lead and Computer Engineer specializing in penetration testing, vulnerability assessment, and security for Japanese clients."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Charnyl Adaro - Digital Security Lead" />
+    <meta
+      property="og:description"
+      content="Penetration testing, vulnerability assessment, and security leadership for international clients."
+    />
+    <meta property="og:url" content="https://charnyladaro.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://charnyladaro.github.io/portfolio/assets/profile-pic.png"
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/png" href="./assets/cha-logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -33,14 +50,19 @@
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#certificates" class="nav-link">Certificates</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          onclick="toggleMenu()"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </nav>
 
@@ -76,19 +98,17 @@
           <div class="hero-socials">
             <a
               href="https://linkedin.com/in/charnyladaro"
-              target="_blank"
-              class="social-icon"
-            >
+              target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="LinkedIn">
               <i class="fab fa-linkedin"></i>
             </a>
             <a
               href="https://github.com/charnyladaro"
-              target="_blank"
-              class="social-icon"
-            >
+              target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="mailto:charnyladaro@gmail.com" class="social-icon">
+            <a href="mailto:charnyladaro@gmail.com" class="social-icon" aria-label="Email">
               <i class="fas fa-envelope"></i>
             </a>
           </div>
@@ -96,8 +116,10 @@
         <div class="hero-image">
           <div class="profile-card">
             <img
-              src="./assets/profile-pic.png"
+              src="./assets/profile-pic.webp"
               alt="Charnyl Adaro"
+              width="800"
+              height="800"
               class="profile-img"
             />
             <div class="profile-ring"></div>
@@ -127,7 +149,7 @@
             <div class="stat-icon">
               <i class="fas fa-shield-alt"></i>
             </div>
-            <h3>3+ Years</h3>
+            <h3>4+ Years</h3>
             <p>Digital Security Experience</p>
           </div>
 
@@ -334,14 +356,14 @@
         <div class="certificates-grid">
           <div class="cert-card" data-aos="zoom-in">
             <div class="cert-image">
-              <img
+              <img loading="lazy"
                 src="./assets/certificates/ethical-hacker.png"
                 alt="Ethical Hacker"
               />
               <div class="cert-overlay">
                 <a
                   href="https://www.credly.com/badges/56c0cda2-d8f5-43a1-9ee8-72d918d62c40/public_url"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="cert-btn"
                 >
                   <i class="fas fa-external-link-alt"></i> View Certificate
@@ -353,11 +375,11 @@
 
           <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
             <div class="cert-image">
-              <img src="./assets/certificates/isc2-candidate.png" alt="ISC2" />
+              <img loading="lazy" src="./assets/certificates/isc2-candidate.png" alt="ISC2" />
               <div class="cert-overlay">
                 <a
                   href="https://www.credly.com/badges/5d853a7a-54a2-48dc-ad77-08c12a4493b9/public_url"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="cert-btn"
                 >
                   <i class="fas fa-external-link-alt"></i> View Certificate
@@ -369,14 +391,14 @@
 
           <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
             <div class="cert-image">
-              <img
+              <img loading="lazy"
                 src="./assets/certificates/web-development-fundamentals.png"
                 alt="Web Dev"
               />
               <div class="cert-overlay">
                 <a
                   href="https://www.credly.com/badges/236d7d72-8243-4a26-abc5-8782d6e9b45c/public_url"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="cert-btn"
                 >
                   <i class="fas fa-external-link-alt"></i> View Certificate
@@ -388,11 +410,11 @@
 
           <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
             <div class="cert-image">
-              <img src="./assets/certificates/Testdome.png" alt="TestDome" />
+              <img loading="lazy" src="./assets/certificates/Testdome.png" alt="TestDome" />
               <div class="cert-overlay">
                 <a
                   href="https://www.testdome.com/certificates/f009a6de03664a68879fd2ad3ad31bf0"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="cert-btn"
                 >
                   <i class="fas fa-external-link-alt"></i> View Certificate
@@ -419,36 +441,30 @@
           <div class="project-card" data-aos="fade-up">
             <div class="project-image">
               <img
-                src="https://raw.githubusercontent.com/charnyladaro/pentestlab/main/images/HAckingLab/hackinglab7.png"
-                alt="Hacking Labs"
+                loading="lazy"
+                src="./assets/projects/pentestlab.webp"
+                alt="Hacking Labs penetration testing environment"
               />
               <div class="project-overlay">
                 <div class="project-tags">
                   <span>Penetration Testing</span>
-                  <span>Security</span>
+                  <span>API Security</span>
                 </div>
               </div>
             </div>
             <div class="project-info">
               <h3>Hacking Labs</h3>
               <p>
-                Comprehensive penetration testing lab environment for security
-                research and vulnerability assessment
+                Penetration testing lab environment for security research,
+                web and API vulnerability assessment
               </p>
               <div class="project-links">
                 <a
                   href="https://github.com/charnyladaro/pentestlab"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="project-link"
                 >
                   <i class="fab fa-github"></i> GitHub
-                </a>
-                <a
-                  href="https://github.com/charnyladaro/pentestlab"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
               </div>
             </div>
@@ -457,45 +473,8 @@
           <div class="project-card" data-aos="fade-up" data-aos-delay="100">
             <div class="project-image">
               <img
-                src="https://raw.githubusercontent.com/charnyladaro/pentestlab/main/images/HAckingLab/hackinglab7.png"
-                alt="API Hacking"
-              />
-              <div class="project-overlay">
-                <div class="project-tags">
-                  <span>API Security</span>
-                  <span>Testing</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h3>API Hacking</h3>
-              <p>
-                API security testing framework and vulnerability assessment
-                tools for modern web applications
-              </p>
-              <div class="project-links">
-                <a
-                  href="https://github.com/charnyladaro/pentestlab"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                <a
-                  href="https://github.com/charnyladaro/pentestlab"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-image">
-              <img
-                src="https://raw.githubusercontent.com/charnyladaro/Excel_Time_tracker/main/images/image2.jpg"
+                loading="lazy"
+                src="./assets/projects/excel-time-tracker.jpg"
                 alt="VBA Time Tracker"
               />
               <div class="project-overlay">
@@ -514,17 +493,10 @@
               <div class="project-links">
                 <a
                   href="https://github.com/charnyladaro/Excel_Time_tracker"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="project-link"
                 >
                   <i class="fab fa-github"></i> GitHub
-                </a>
-                <a
-                  href="https://github.com/charnyladaro/Excel_Time_tracker"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
               </div>
             </div>
@@ -558,20 +530,12 @@
               <a href="mailto:charnyladaro@gmail.com">charnyladaro@gmail.com</a>
             </div>
 
-            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <h3>Phone</h3>
-              <a href="tel:+639055667864">+63 905 566 7864</a>
-            </div>
-
             <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
               <div class="contact-icon">
                 <i class="fab fa-linkedin"></i>
               </div>
               <h3>LinkedIn</h3>
-              <a href="https://linkedin.com/in/charnyladaro" target="_blank"
+              <a href="https://linkedin.com/in/charnyladaro" target="_blank" rel="noopener noreferrer"
                 >Connect with me</a
               >
             </div>
@@ -593,17 +557,14 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-socials">
-            <a href="https://linkedin.com/in/charnyladaro" target="_blank"
-              ><i class="fab fa-linkedin"></i
+            <a href="https://linkedin.com/in/charnyladaro" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com/charnyladaro" target="_blank"
-              ><i class="fab fa-github"></i
+            <a href="https://github.com/charnyladaro" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i
             ></a>
-            <a href="mailto:charnyladaro@gmail.com"
-              ><i class="fas fa-envelope"></i
+            <a href="mailto:charnyladaro@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i
             ></a>
           </div>
-          <p>&copy; 2024 Charnyl Adaro. All Rights Reserved.</p>
+          <p>&copy; <span id="year">2026</span> Charnyl Adaro. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

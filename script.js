@@ -7,6 +7,7 @@ function toggleMenu() {
     
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
     
     // Prevent body scroll when menu is open
     if (navLinks.classList.contains('active')) {
@@ -18,6 +19,10 @@ function toggleMenu() {
 
 // Smooth Scrolling for Navigation Links
 document.addEventListener('DOMContentLoaded', function() {
+    // Keep footer year current
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+
     // Close mobile menu when clicking a link
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
@@ -46,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (navLinksContainer.classList.contains('active')) {
                 navLinksContainer.classList.remove('active');
                 hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
                 document.body.style.overflow = 'auto';
             }
         });
@@ -119,6 +125,7 @@ document.addEventListener('click', function(event) {
     if (navLinks.classList.contains('active') && !nav.contains(event.target)) {
         navLinks.classList.remove('active');
         hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = 'auto';
     }
 });
